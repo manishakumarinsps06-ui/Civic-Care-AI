@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Civic_Care AI</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🏙️</span>
+            <span>Civic Care <strong>AI</strong></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Issue</a>
+            <a href="track.html">Track Complaint</a>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="btn btn-outline">
+                Logout
+            </a>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <main class="dashboard-section">
+
+        <div class="dashboard-container">
+
+
+            <!-- ================= WELCOME ================= -->
+
+            <div class="dashboard-header">
+
+                <div>
+                    <span class="section-tag">
+                        CITIZEN DASHBOARD
+                    </span>
+
+                    <h1>
+                        Welcome to Civic_Care AI 👋
+                    </h1>
+
+                    <p>
+                        Report civic issues and keep track of
+                        your complaints from one place.
+                    </p>
+                </div>
+
+                <a href="report.html"
+                   class="btn btn-primary">
+                    + Report New Issue
+                </a>
+
+            </div>
+
+
+            <!-- ================= STAT CARDS ================= -->
+
+            <div class="dashboard-stats">
+
+
+                <!-- TOTAL -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-icon">
+                        📋
+                    </div>
+
+                    <div>
+                        <h3>0</h3>
+                        <p>Total Complaints</p>
+                    </div>
+
+                </div>
+
+
+                <!-- PENDING -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-icon">
+                        ⏳
+                    </div>
+
+                    <div>
+                        <h3>0</h3>
+                        <p>Pending</p>
+                    </div>
+
+                </div>
+
+
+                <!-- IN PROGRESS -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-icon">
+                        🔄
+                    </div>
+
+                    <div>
+                        <h3>0</h3>
+                        <p>In Progress</p>
+                    </div>
+
+                </div>
+
+
+                <!-- RESOLVED -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-icon">
+                        ✅
+                    </div>
+
+                    <div>
+                        <h3>0</h3>
+                        <p>Resolved</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RECENT COMPLAINTS ================= -->
+
+            <section class="complaints-section">
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+                        <h2>Recent Complaints</h2>
+
+                        <p>
+                            Your recently submitted civic complaints.
+                        </p>
+                    </div>
+
+                    <a href="track.html">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <!-- COMPLAINT TABLE -->
+
+                <div class="complaints-table-container">
+
+                    <table class="complaints-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Complaint ID</th>
+                                <th>Issue</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <!-- SAMPLE COMPLAINT -->
+
+                            <tr>
+
+                                <td>
+                                    CL-0001
+                                </td>
+
+                                <td>
+                                    Large pothole near main road
+                                </td>
+
+                                <td>
+                                    Pothole
+                                </td>
+
+                                <td>
+                                    —
+                                </td>
+
+                                <td>
+                                    <span class="status-badge pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="track.html"
+                                       class="table-action">
+                                        View
+                                    </a>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- EMPTY STATE -->
+
+                            <tr class="empty-row">
+
+                                <td colspan="6">
+
+                                    <div class="empty-state">
+
+                                        <span>
+                                            📭
+                                        </span>
+
+                                        <h3>
+                                            No more complaints
+                                        </h3>
+
+                                        <p>
+                                            Your submitted complaints
+                                            will appear here.
+                                        </p>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= QUICK ACTIONS ================= -->
+
+            <section class="quick-actions">
+
+                <h2>Quick Actions</h2>
+
+                <div class="quick-action-grid">
+
+
+                    <a href="report.html"
+                       class="quick-action-card">
+
+                        <span>📸</span>
+
+                        <div>
+                            <h3>Report an Issue</h3>
+                            <p>
+                                Upload a photo and report a civic problem.
+                            </p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="track.html"
+                       class="quick-action-card">
+
+                        <span>🔎</span>
+
+                        <div>
+                            <h3>Track Complaint</h3>
+                            <p>
+                                Check the current status of your complaint.
+                            </p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="index.html#how-it-works"
+                       class="quick-action-card">
+
+                        <span>💡</span>
+
+                        <div>
+                            <h3>How It Works</h3>
+                            <p>
+                                Learn how Civic_Care AI processes reports.
+                            </p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Civic_Care AI. Mini Project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Shared JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+

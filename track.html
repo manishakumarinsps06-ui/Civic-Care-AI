@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Track Complaint | Civic_Care AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Civic Care <span>AI</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="report.html">Report Issue</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="track.html" class="active">Track Complaint</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- TRACK SECTION -->
+    <section class="track-section">
+
+        <div class="track-container">
+
+            <!-- LEFT INFO -->
+            <div class="track-info">
+
+                <span class="section-tag">COMPLAINT TRACKING</span>
+
+                <h1>
+                    Track Your <span>Complaint</span>
+                </h1>
+
+                <p>
+                    Enter your complaint ID to check the current status
+                    and progress of your reported civic issue.
+                </p>
+
+                <div class="track-points">
+
+                    <div class="track-point">
+                        <span>🔎</span>
+                        <div>
+                            <h3>Easy Tracking</h3>
+                            <p>Use your complaint ID to find your report.</p>
+                        </div>
+                    </div>
+
+                    <div class="track-point">
+                        <span>📊</span>
+                        <div>
+                            <h3>Live Status</h3>
+                            <p>Check whether your complaint is pending or being processed.</p>
+                        </div>
+                    </div>
+
+                    <div class="track-point">
+                        <span>✅</span>
+                        <div>
+                            <h3>Resolution Updates</h3>
+                            <p>Know when your civic issue has been resolved.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT TRACK CARD -->
+            <div class="track-card">
+
+                <div class="track-card-heading">
+                    <h2>Track Complaint</h2>
+                    <p>Enter your complaint ID below.</p>
+                </div>
+
+                <form id="trackForm">
+
+                    <div class="form-group">
+
+                        <label for="complaintId">
+                            Complaint ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="complaintId"
+                            placeholder="Example: CL-0001"
+                            required
+                        >
+
+                    </div>
+
+                    <button type="submit" class="login-submit">
+                        Track Complaint
+                    </button>
+
+                </form>
+
+
+                <!-- RESULT -->
+                <div id="trackResult" class="track-result">
+
+                    <div class="result-header">
+
+                        <div>
+                            <span class="result-label">
+                                Complaint ID
+                            </span>
+
+                            <h3 id="resultComplaintId">
+                                CL-0001
+                            </h3>
+                        </div>
+
+                        <span id="resultStatus" class="status-badge pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-details">
+
+                        <div class="result-detail">
+                            <span>Issue</span>
+                            <strong id="resultIssue">
+                                Large pothole near main road
+                            </strong>
+                        </div>
+
+                        <div class="result-detail">
+                            <span>Category</span>
+                            <strong id="resultCategory">
+                                Pothole
+                            </strong>
+                        </div>
+
+                        <div class="result-detail">
+                            <span>Location</span>
+                            <strong id="resultLocation">
+                                Not available
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROGRESS -->
+                    <div class="complaint-progress">
+
+                        <div class="progress-step completed">
+
+                            <div class="progress-circle">
+                                ✓
+                            </div>
+
+                            <div>
+                                <h4>Complaint Submitted</h4>
+                                <p>Your complaint has been received.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-line"></div>
+
+
+                        <div class="progress-step active">
+
+                            <div class="progress-circle">
+                                2
+                            </div>
+
+                            <div>
+                                <h4>Under Verification</h4>
+                                <p>Authority will verify the complaint.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-line"></div>
+
+
+                        <div class="progress-step">
+
+                            <div class="progress-circle">
+                                3
+                            </div>
+
+                            <div>
+                                <h4>In Progress</h4>
+                                <p>Department will work on the issue.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-line"></div>
+
+
+                        <div class="progress-step">
+
+                            <div class="progress-circle">
+                                4
+                            </div>
+
+                            <div>
+                                <h4>Resolved</h4>
+                                <p>The civic issue has been resolved.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Civic_Care AI. Mini Project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+

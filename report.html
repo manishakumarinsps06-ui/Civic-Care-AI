@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report an Issue | Civic_Care AI</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🏙️</span>
+            <span>Civic Care <strong>AI</strong></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="index.html#features">Features</a>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="dashboard.html" class="btn btn-outline">
+                Dashboard
+            </a>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= REPORT SECTION ================= -->
+
+    <section class="login-section report-section">
+
+        <div class="report-container">
+
+            <!-- LEFT INFORMATION -->
+
+            <div class="login-info report-info">
+
+                <span class="section-tag">REPORT A CIVIC ISSUE</span>
+
+                <h1>
+                    Help Make Your City Better
+                </h1>
+
+                <p>
+                    Spot a civic problem? Report it through Civic_Care AI.
+                    Upload a picture and provide the details so the issue
+                    can be reviewed and resolved by the concerned authority.
+                </p>
+
+
+                <div class="login-features">
+
+                    <div class="login-feature">
+
+                        <span class="feature-icon">📸</span>
+
+                        <div>
+                            <h3>Upload a Photo</h3>
+                            <p>
+                                Take a clear picture of the civic issue.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="login-feature">
+
+                        <span class="feature-icon">🤖</span>
+
+                        <div>
+                            <h3>AI Detection</h3>
+                            <p>
+                                AI will identify the type of civic problem.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="login-feature">
+
+                        <span class="feature-icon">📍</span>
+
+                        <div>
+                            <h3>Location Based Reporting</h3>
+                            <p>
+                                Help authorities identify where the issue
+                                is located.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="login-feature">
+
+                        <span class="feature-icon">🔎</span>
+
+                        <div>
+                            <h3>Track Your Complaint</h3>
+                            <p>
+                                Track the progress of your reported issue.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= REPORT CARD ================= -->
+
+            <div class="login-card report-card">
+
+                <div class="login-heading">
+
+                    <h2>Report an Issue</h2>
+
+                    <p>
+                        Tell us about the problem in your area.
+                    </p>
+
+                </div>
+
+
+                <!-- REPORT FORM -->
+
+                <form id="reportForm">
+
+
+                    <!-- ISSUE TITLE -->
+
+                    <div class="form-group">
+
+                        <label for="issueTitle">
+                            Issue Title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="issueTitle"
+                            name="issueTitle"
+                            placeholder="e.g. Large pothole near main road"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ISSUE CATEGORY -->
+
+                    <div class="form-group">
+
+                        <label for="issueCategory">
+                            Issue Category
+                        </label>
+
+                        <select
+                            id="issueCategory"
+                            name="issueCategory"
+                            required
+                        >
+
+                            <option value="">
+                                Select issue category
+                            </option>
+
+                            <option value="pothole">
+                                🛣️ Pothole / Damaged Road
+                            </option>
+
+                            <option value="garbage">
+                                🗑️ Garbage / Waste
+                            </option>
+
+                            <option value="streetlight">
+                                💡 Broken Streetlight
+                            </option>
+
+                            <option value="water">
+                                💧 Water Leakage
+                            </option>
+
+                            <option value="drainage">
+                                🚰 Drainage / Sewage
+                            </option>
+
+                            <option value="traffic">
+                                🚦 Traffic / Road Sign
+                            </option>
+
+                            <option value="other">
+                                📋 Other Civic Issue
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- IMAGE UPLOAD -->
+
+                    <div class="form-group">
+
+                        <label for="issueImage">
+                            Upload Issue Photo
+                        </label>
+
+                        <input
+                            type="file"
+                            id="issueImage"
+                            name="issueImage"
+                            accept="image/*"
+                            required
+                        >
+
+                        <small class="file-help">
+                            Upload a clear image of the civic issue.
+                        </small>
+
+                    </div>
+
+
+                    <!-- IMAGE PREVIEW -->
+
+                    <div
+                        id="imagePreviewContainer"
+                        class="image-preview-container"
+                    >
+
+                        <img
+                            id="imagePreview"
+                            src=""
+                            alt="Issue Preview"
+                        >
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Enter the issue location"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- DESCRIPTION -->
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Description
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="4"
+                            placeholder="Describe the issue in detail..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary login-submit"
+                    >
+                        Submit Complaint
+                    </button>
+
+                </form>
+
+
+                <!-- BACK TO DASHBOARD -->
+
+                <div class="register-link">
+
+                    <p>
+                        Want to check your complaints?
+                        <a href="dashboard.html">
+                            Go to Dashboard
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Civic_Care AI. Mini Project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Shared JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+
